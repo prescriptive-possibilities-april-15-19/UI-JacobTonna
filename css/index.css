@@ -124,3 +124,32 @@ a img {
 :focus {
   outline: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  width: 100%;
+}
+h1 {
+  font-size: 6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+}
+nav {
+  background: red;
+}
+section {
+  padding: 0 30rem 0;
+}
+.section1 .flex-2-ltr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
