@@ -165,51 +165,70 @@ h1 {
   font-weight: 400;
 }
 h3 {
-  font-size: 3rem;
+  font-weight: 300;
+  font-size: 2.5rem;
 }
 p {
   font-size: 2rem;
 }
 nav {
   padding: 6.5rem 12rem 6.5rem;
-  font-size: 3rem;
+  font-size: 2.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 nav a {
   text-decoration: none;
-  color: #b1ede8;
-  padding-left: 11rem;
+  color: #00A9A5;
+  padding-left: 8rem;
 }
 nav a:hover {
-  color: #00a95a;
+  color: #b1ede8;
 }
 section {
-  padding: 0 30rem 0;
+  padding: 0 33rem 0;
 }
 .section1-div {
+  color: #b1ede8;
   background-image: linear-gradient(rgba(9, 35, 39, 0.9), rgba(9, 35, 39, 0.9)), url("../img/Pharmacy-Wave.svg"), url("../img/Pharmacy-Picture.png");
   background-position: bottom center;
   background-repeat: no-repeat;
 }
-.section1-div .flex-2-ltr {
+.flex-2-ltr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2.5rem 0 0;
 }
-.section1-div .flex-2-ltr .section1-right button {
+.flex-2-ltr .section1-right button {
   margin-top: 4rem;
-  font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #092327;
-  padding: 2.5rem 6rem 2.5rem;
+  padding: 2.3rem 5.5rem;
   border-radius: 1rem;
   background: #ffffff;
-  border: 2px solid #00a95a;
+  border: 1px solid #00A9A5;
 }
-.section1-div .flex-2-ltr .section1-right button:hover {
+.flex-2-ltr .section1-right button:hover {
   color: white;
-  background-color: #00a95a;
+  background-color: #00A9A5;
   border-color: #092327;
+}
+.section1-service {
+  padding: 6.5rem 0 9rem;
+}
+.section1-service h3 {
+  text-align: center;
+}
+.inner-section1 {
+  padding: 10rem 0 2rem;
+  text-align: center;
+}
+.section1-sub {
+  background: #092327;
+}
+.section1-sub-paragraph {
+  text-align: center;
+  padding: 1rem 0 10rem;
 }

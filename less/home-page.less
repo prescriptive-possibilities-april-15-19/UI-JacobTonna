@@ -1,8 +1,9 @@
 section{
     // inner padding for ALL sections
-    padding: 0 30rem 0;
+    padding: 0 33rem 0;
 }
 .section1-div{
+    color: @paleturquoise;
     //background image stuff
     background-image: linear-gradient(
         rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .9),
@@ -12,15 +13,34 @@ section{
         url("../img/Pharmacy-Picture.png");
         background-position: bottom center;
         background-repeat: no-repeat;
-    .flex-2-ltr{
-        .flex-it();
-        .section1-left{
+}
+
+.flex-2-ltr{
+    .flex-it();
+    padding: 2.5rem 0 0;
+    .section1-left{
+    }
+    .section1-right{
+        button{
+            margin-top: 4rem;
+            .button();
         }
-        .section1-right{
-            button{
-                margin-top: 4rem;
-                .button();
-            }
-        }
-    }  
+    }
+}
+.section1-service{
+    padding: 6.5rem 0 9rem;
+    h3{
+        text-align: center;
+    }
+}
+.inner-section1{
+    padding: 10rem 0 2rem;
+    text-align: center;
+}
+.section1-sub{
+    background: @darkgreen;
+}
+.section1-sub-paragraph{
+    text-align: center;
+    padding: 1rem 0 10rem;
 }
