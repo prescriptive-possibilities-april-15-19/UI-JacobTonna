@@ -1,80 +1,103 @@
-section{
+section {
     // inner padding for ALL sections
     padding: 0 33rem 0;
 }
 
-.section1-div{
+.section1-div {
     color: @paleturquoise;
     //background image stuff
     background-image: linear-gradient(
         rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .9),
-        rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .9)
-        ),
+        rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .9)),
         url("../img/Pharmacy-Wave.svg"),
         url("../img/Pharmacy-Picture.png");
-        background-position: bottom center;
-        background-repeat: no-repeat;
+    background-position: bottom center;
+    background-repeat: no-repeat;
 }
 
-.flex-1-ltr{
+.flex-1-ltr {
     .flex-it();
     padding: 2.5rem 0 0;
-    .section1-left{
-    }
-    .section1-right{
-        button{
+
+    .section1-left {}
+
+    .section1-right {
+        button {
             margin-top: 4rem;
             .button();
         }
     }
 }
-.section1-service{
+
+.section1-service {
     padding: 6.5rem 0 9rem;
-    h3{
+
+    h3 {
         text-align: center;
     }
 }
-.inner-section1{
+
+.inner-section1 {
     padding: 10rem 0 2rem;
     text-align: center;
     color: @white;
 }
-.section1-sub{
+
+.section1-sub {
     background: @darkgreen;
 }
-.section1-sub-paragraph{
+
+.section1-sub-paragraph {
     text-align: center;
     padding: 1rem 0 10rem;
 }
 
 // section 2
 
-.section2{
+.section2 {
     text-align: center;
     background: @persiangreen;
     padding: 19rem 0;
 }
 
 // section 3
-.flex-2-ltr{
+.flex-2-ltr {
     padding: 20rem 0 0;
     .flex-it();
-    .section1-left{
+
+    .section1-left {
         padding: 0 6rem 0 0;
     }
-    .section1-left{
+
+    .section1-left {}
+}
+
+// quote styleing
+.flex-carousel-container{
+    padding: 14rem 0 0;
+    .flex-it();
+    .carousel-left-arrow{
+
+    }
+    .carousel-right-arrow{ 
 
     }
 }
-.flex-carousel-container{
-    padding: 15rem 0 0;
-    .flex-it();
-}
-.flex-slider-ltr{
-    .flex-it();
-    .carousel-flex-left{
-        img{
+.carousel-quote{
+    .flex-slider-ltr{
+        .flex-it();
+        .carousel-flex-left{
+            flex-shrink: 0;
+            // flex apprently shrinks content
             width: 17rem;
+            height: 17rem;
+            background: red;
+            img{
+                height: 100%;
             }
+        }
+        .carousel-flex-right{
+
+        }
     }
 }

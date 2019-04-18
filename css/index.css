@@ -249,16 +249,22 @@ section {
   padding: 0 6rem 0 0;
 }
 .flex-carousel-container {
-  padding: 15rem 0 0;
+  padding: 14rem 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.flex-slider-ltr {
+.carousel-quote .flex-slider-ltr {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.flex-slider-ltr .carousel-flex-left img {
+.carousel-quote .flex-slider-ltr .carousel-flex-left {
+  flex-shrink: 0;
   width: 17rem;
+  height: 17rem;
+  background: red;
+}
+.carousel-quote .flex-slider-ltr .carousel-flex-left img {
+  height: 100%;
 }
