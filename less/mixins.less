@@ -1,0 +1,20 @@
+.flex-it (@align: center){
+    display: flex;
+    justify-content: space-between;
+    align-items: @align;
+}
+.button (){
+    font-weight: 600;
+    font-size: 2rem;
+    color: @darkgreen;
+    padding: 2.5rem 6rem 2.5rem;
+    border-radius: 1rem;
+    background: @white;
+    border: 2px solid @persiangreen;
+
+    &:hover{
+        color: white;
+        background-color: @persiangreen;
+        border-color: @darkgreen;
+    }
+}

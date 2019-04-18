@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v16/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
+}
 /**
  * Global Reset of all HTML Elements
  *
@@ -129,11 +153,16 @@ a img {
 }
 html {
   font-size: 62.5%;
-  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #ffffff;
   width: 100%;
 }
 h1 {
   font-size: 6rem;
+  font-weight: 400;
 }
 h3 {
   font-size: 3rem;
@@ -142,7 +171,19 @@ p {
   font-size: 2rem;
 }
 nav {
-  background: rgba(250, 10, 10, 0.3);
+  padding: 6.5rem 12rem 6.5rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: #b1ede8;
+  padding-left: 11rem;
+}
+nav a:hover {
+  color: #00a95a;
 }
 section {
   padding: 0 30rem 0;
@@ -154,7 +195,21 @@ section {
 }
 .section1-div .flex-2-ltr {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.section1-div .flex-2-ltr .section1-right button {
+  margin-top: 4rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #092327;
+  padding: 2.5rem 6rem 2.5rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  border: 2px solid #00a95a;
+}
+.section1-div .flex-2-ltr .section1-right button:hover {
+  color: white;
+  background-color: #00a95a;
+  border-color: #092327;
 }
