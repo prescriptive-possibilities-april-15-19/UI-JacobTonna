@@ -159,6 +159,7 @@ html {
   letter-spacing: 0.2rem;
   color: #ffffff;
   width: 100%;
+  background: gray;
 }
 h1 {
   font-size: 6rem;
@@ -195,13 +196,13 @@ section {
   background-position: bottom center;
   background-repeat: no-repeat;
 }
-.flex-2-ltr {
+.flex-1-ltr {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2.5rem 0 0;
 }
-.flex-2-ltr .section1-right button {
+.flex-1-ltr .section1-right button {
   margin-top: 4rem;
   font-size: 1.8rem;
   color: #092327;
@@ -210,7 +211,7 @@ section {
   background: #ffffff;
   border: 1px solid #00A9A5;
 }
-.flex-2-ltr .section1-right button:hover {
+.flex-1-ltr .section1-right button:hover {
   color: white;
   background-color: #00A9A5;
   border-color: #092327;
@@ -224,6 +225,7 @@ section {
 .inner-section1 {
   padding: 10rem 0 2rem;
   text-align: center;
+  color: #ffffff;
 }
 .section1-sub {
   background: #092327;
@@ -231,4 +233,32 @@ section {
 .section1-sub-paragraph {
   text-align: center;
   padding: 1rem 0 10rem;
+}
+.section2 {
+  text-align: center;
+  background: #00A9A5;
+  padding: 19rem 0;
+}
+.flex-2-ltr {
+  padding: 20rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-2-ltr .section1-left {
+  padding: 0 6rem 0 0;
+}
+.flex-carousel-container {
+  padding: 15rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-slider-ltr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-slider-ltr .carousel-flex-left img {
+  width: 17rem;
 }
