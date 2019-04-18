@@ -3,11 +3,11 @@ section {
     padding: 0 33rem 0;
 }
 
+//start section 1
 .section1-div {
     color: @paleturquoise;
     //background image stuff
-    background-image: linear-gradient(
-        rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .9),
+    background-image: linear-gradient(rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .9),
         rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .9)),
         url("../img/Pharmacy-Wave.svg"),
         url("../img/Pharmacy-Picture.png");
@@ -52,7 +52,8 @@ section {
     padding: 1rem 0 10rem;
 }
 
-// section 2
+// end section 1
+// start section 2
 
 .section2 {
     text-align: center;
@@ -60,7 +61,12 @@ section {
     padding: 19rem 0;
 }
 
-// section 3
+// end section 2
+// start section 3
+.section3 {
+    background: red;
+}
+
 .flex-2-ltr {
     padding: 20rem 0 0;
     .flex-it();
@@ -73,31 +79,52 @@ section {
 }
 
 // quote styleing
-.flex-carousel-container{
-    padding: 14rem 0 0;
+.flex-carousel-container {
+    padding: 14rem 0 18rem;
     .flex-it();
-    .carousel-left-arrow{
 
-    }
-    .carousel-right-arrow{ 
+    .carousel-left-arrow {}
 
-    }
+    .carousel-right-arrow {}
 }
-.carousel-quote{
-    .flex-slider-ltr{
+
+.carousel-quote {
+    margin: 0 4rem 0;
+    border-radius: 1rem;
+    border: 2px solid @white;
+
+    .flex-slider-ltr {
         .flex-it();
-        .carousel-flex-left{
+
+        .carousel-flex-left {
             flex-shrink: 0;
             // flex apprently shrinks content
             width: 17rem;
             height: 17rem;
-            background: red;
-            img{
+
+            img {
+                border-radius: 1rem 0 0 1rem;
                 height: 100%;
             }
         }
-        .carousel-flex-right{
 
+        .carousel-flex-right {
+            border-radius: 0 1rem 1rem 0;
+            height: 17rem;
+            background: @darkgreen;
+            padding: 2rem;
+
+            h3 {
+                padding: 0 0 .5rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-style: italic;
+            }
         }
     }
 }
+
+// end quote styling
+// end section 3

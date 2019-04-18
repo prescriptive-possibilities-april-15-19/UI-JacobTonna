@@ -239,6 +239,9 @@ section {
   background: #00A9A5;
   padding: 19rem 0;
 }
+.section3 {
+  background: red;
+}
 .flex-2-ltr {
   padding: 20rem 0 0;
   display: flex;
@@ -249,10 +252,15 @@ section {
   padding: 0 6rem 0 0;
 }
 .flex-carousel-container {
-  padding: 14rem 0 0;
+  padding: 14rem 0 18rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.carousel-quote {
+  margin: 0 4rem 0;
+  border-radius: 1rem;
+  border: 2px solid #ffffff;
 }
 .carousel-quote .flex-slider-ltr {
   display: flex;
@@ -263,8 +271,21 @@ section {
   flex-shrink: 0;
   width: 17rem;
   height: 17rem;
-  background: red;
 }
 .carousel-quote .flex-slider-ltr .carousel-flex-left img {
+  border-radius: 1rem 0 0 1rem;
   height: 100%;
+}
+.carousel-quote .flex-slider-ltr .carousel-flex-right {
+  border-radius: 0 1rem 1rem 0;
+  height: 17rem;
+  background: #092327;
+  padding: 2rem;
+}
+.carousel-quote .flex-slider-ltr .carousel-flex-right h3 {
+  padding: 0 0 0.5rem;
+}
+.carousel-quote .flex-slider-ltr .carousel-flex-right p {
+  font-size: 1.6rem;
+  font-style: italic;
 }
