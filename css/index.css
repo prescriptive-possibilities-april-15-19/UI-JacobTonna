@@ -161,6 +161,9 @@ html {
   width: 100%;
   background: gray;
 }
+section {
+  padding: 0 33rem 0;
+}
 h1 {
   font-size: 6rem;
   font-weight: 400;
@@ -187,8 +190,15 @@ nav a {
 nav a:hover {
   color: #b1ede8;
 }
-section {
-  padding: 0 33rem 0;
+.footer-section2 {
+  padding: 10rem 0;
+  background: #092327;
+  color: #b1ede8;
+  text-align: center;
+  font-style: italic;
+}
+.footer-section2 p {
+  font-size: 1.6rem;
 }
 .section1-div {
   color: #b1ede8;
@@ -240,7 +250,9 @@ section {
   padding: 19rem 0;
 }
 .section3 {
-  background: red;
+  background-image: linear-gradient(rgba(9, 35, 39, 0.9), #092327), url("../img/people.png");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .flex-2-ltr {
   padding: 20rem 0 0;
