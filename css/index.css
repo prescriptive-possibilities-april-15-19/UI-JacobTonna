@@ -452,8 +452,7 @@ img {
   }
 }
 .flex-carousel-container {
-  margin: 5rem 0 5rem
-    ;
+  margin: 5rem 0 5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
