@@ -180,6 +180,7 @@
 .section3 {
     background: purple;
 }
+// experts section
 .experts-container{
     margin-top: 5rem;
     // make it bigger
@@ -228,10 +229,50 @@
         }
     }
 }
+// quote slider
 .flex-carousel-container{
+    margin-top: 5rem;
+    .flex-it();
+    // make it bigger
+    @media @tablet{
+        //tablet style here
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+    }
+}
+.carousel-quote{
+    margin: 0 4rem 0;
+    border-radius: 1rem;
+    border: 2px solid @white;
+}
+.flex-slider-ltr{
+    .flex-it();
+    flex-direction: column; // mobile only
+    text-align: center; // mobile only
+    img{
+        height: 15rem;
+    }
+    // make it bigger
+    @media @tablet{
+        //tablet style here
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+        flex-direction: row;
+        text-align: left;
+        .carousel-flex-left{
+            flex-shrink: 0;
+            // flex apprently shrinks content
+        }
+    }
+}
+.carousel-flex-left{
 
 }
-
+.carousel-flex-right{
+    
+}
 //
 // section 4
 // 
