@@ -1,0 +1,24 @@
+.nav {
+    text-align: center;
+    .links {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+            color: @midnightgreen;
+        }
+    }
+    // let make it bigger
+    @media @tablet {
+        //tablet style here
+    }
+
+    @media @chromebooks {
+        //chromebooks and larger here
+        .flex-it(@space: space-between);
+        .links a:last-child{
+            margin-left: 4rem;
+        }
+    }
+}

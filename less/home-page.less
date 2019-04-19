@@ -1,5 +1,41 @@
 .section1-div{
     background: red;
+    @media @tablet{
+        //tablet style here
+
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+    }
+}
+.section1{
+    background: darkmagenta;
+    text-align: center;
+    .section1-image img{
+        display: none;
+    }
+
+    // make it bigger
+    @media @tablet{
+        //tablet style here
+        .section1-image img{
+            display: block;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+        text-align: left;
+        .section1-flex{
+            .flex-it();
+        }
+        .section1-image img{
+            display: block;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
 }
 .section2{
     background: yellow;
