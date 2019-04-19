@@ -11,12 +11,12 @@
     }
 
     // responsive design stuff
-    @media @phone {
-        // if its smaller than 500 pixels
-        margin: 1rem 0 0;
+    @media @chromebooks{
+        // if its smaller than 1336 pixels
+        margin: 4rem 0 0;
 
         img {
-            display: none;
+            width: 85%;
         }
     }
 
@@ -28,10 +28,24 @@
             width: 75%
         }
     }
+
+    @media @phone {
+        // if its smaller than 500 pixels
+        margin: 1rem 0 0;
+
+        img {
+            display: none;
+        }
+    }
 }
 
 .section1-flex {
     .flex-it();
+
+    @media @chromebooks{
+        // if its smaller than 1336 pixels
+
+    }
 
     @media @tablet {
         // if its smaller than 768 pixels

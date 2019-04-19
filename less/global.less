@@ -26,6 +26,10 @@ h1 {
     font-weight: 100;
 
     // responsive design stuff
+    @media @chromebooks {
+        // if its smaller than 1336 pixels
+        font-size: 1rem;
+        }
     @media @tablet {
         // if its smaller than 768 pixels
         font-size: 2rem;
@@ -42,6 +46,11 @@ section {
     padding: 0 16rem 0;
 
     // responsive design stuff
+    @media @chromebooks{
+        // if its smaller than 1336 pixels
+        padding: 0 6rem 0;
+    }
+
     @media @tablet {
         // if its smaller than 768 pixels
         padding: 0 4rem 0;
