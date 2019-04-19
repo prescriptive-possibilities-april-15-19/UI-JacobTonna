@@ -335,6 +335,7 @@ img {
 }
 .section1-our-service {
   text-align: center;
+  padding: 2rem 0 0 0;
 }
 @media (min-width: 768px) {
 }
@@ -342,6 +343,41 @@ img {
   .section1-our-service {
     font-size: 3rem;
     padding: 6rem 30rem 0;
+  }
+}
+.section1-sub-content-1 {
+  color: white;
+  text-align: center;
+  display: none;
+}
+@media (min-width: 768px) {
+  .section1-sub-content-1 {
+    display: none;
+  }
+}
+@media (min-width: 1336px) {
+  .section1-sub-content-1 {
+    display: block;
+    margin-top: 14rem;
+  }
+  .section1-sub-content-1 h1 {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+}
+.section1-sub-content-2 {
+  background: #092327;
+  color: #ffffff;
+  text-align: center;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1336px) {
+  .section1-sub-content-2 {
+    padding: 0 20rem 6rem;
+  }
+  .section1-sub-content-2 p {
+    font-size: 3rem;
   }
 }
 .section2 {

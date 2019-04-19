@@ -1,38 +1,50 @@
-.section1-div{
+// outer section container
+
+.section1-div {
     .background2();
     color: @paleturquoise;
-    @media @tablet{
+
+    @media @tablet {
         //tablet style here
     }
-    @media @chromebooks{
+
+    @media @chromebooks {
         //chromebooks and larger here
         .background1();
     }
 }
-.section1{
+
+// whole section container
+
+.section1 {
     text-align: center;
-    .section1-image img{
+
+    .section1-image img {
         display: none;
     }
 
     // make it bigger
-    @media @tablet{
+    @media @tablet {
         padding-top: 4rem;
+
         //tablet style here
-        .section1-image img{
+        .section1-image img {
             display: block;
             height: 100%;
             margin: 0 auto;
         }
     }
-    @media @chromebooks{
+
+    @media @chromebooks {
         //chromebooks and larger here
         text-align: left;
-        .section1-flex{
+
+        .section1-flex {
             padding: 10rem 0 0 0;
             .flex-it();
         }
-        .section1-image img{
+
+        .section1-image img {
             display: block;
             height: 100%;
             margin: 0 auto;
@@ -40,59 +52,118 @@
     }
 }
 
-.section1-text-button{
-    h1{
+// text & button
 
-    }
-    p{
+.section1-text-button {
+    h1 {}
 
-    }
-    button{
+    p {}
+
+    button {
         .button1();
     }
+
     // make it bigger
-    @media @tablet{
+    @media @tablet {
+
         //tablet style here
-        h1{
+        h1 {
             font-size: 6rem;
             font-weight: 100;
         }
-        button{
+
+        button {
             .button1();
         }
     }
-    @media @chromebooks{
+
+    @media @chromebooks {
+
         //chromebooks and larger here
-        h1{
+        h1 {
             font-size: 6rem;
             font-weight: 100;
         }
-        button{
+
+        button {
             .button1(@mid-padding: 4rem, @width: auto);
         }
     }
 }
 
-.section1-our-service{
+// our service allows
+
+.section1-our-service {
     text-align: center;
+    padding: 2rem 0 0 0;
     // make it bigger
-    @media @tablet{
+    @media @tablet {
         //tablet style here
 
     }
-    @media @chromebooks{
+
+    @media @chromebooks {
         //chromebooks and larger here
         font-size: 3rem;
         padding: 6rem 30rem 0;
     }
 }
+
+// section 1 sub content " we solve problems "
+
+.section1-sub-content-1 {
+    color: white;
+    text-align: center;
+    display: none;
+    // make it bigger
+    @media @tablet {
+        //tablet style here
+        display: none;
+    }
+
+    @media @chromebooks {
+        //chromebooks and larger here
+        display: block;
+        margin-top: 14rem;
+
+        h1 {
+            font-size: 6rem;
+            font-weight: 100;
+        }
+    }
+}
+
+.section1-sub-content-2 {
+    background: @darkgreen;
+    color: @white;
+    text-align: center;
+
+    // make it bigger
+    @media @tablet {
+        //tablet style here
+    }
+
+    @media @chromebooks {
+        //chromebooks and larger here
+        padding: 0 20rem 6rem;
+
+        p {
+            font-size: 3rem;
+        }
+    }
+}
+
+//
 // section 2
-.section2{
+//
+.section2 {
     background: yellow;
 }
-.section3{
+
+.section3 {
     background: purple;
 }
-.section4{
+
+.section4 {
     background: green;
 }
