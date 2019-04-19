@@ -71,7 +71,9 @@
         </div>
         <div class="flex-carousel-container">
             <div class="carousel-left-arrow">
-                <img src="img/left-arrow.svg" alt="left arrow changes to previous quote">
+                <a class="prev" onclick="changeQuote(-1)">
+                    <img src="img/left-arrow.svg" alt="left arrow changes to previous quote">
+                </a>
             </div>
             <div class="carousel-quote">
                 <div class="flex-slider-ltr">
@@ -86,8 +88,21 @@
                     </div>
                 </div>
             </div>
+            <div class="carousel-quote">
+                <div class="flex-slider-ltr">
+                    <div class="carousel-flex-left">
+                        <img src="img/quote/DrLoremIspumJR.jpg" alt="Photo of Doctor Lorem Ispum">
+                    </div>
+                    <div class="carousel-flex-right">
+                        <h3> Dr Lorem Ispum Jr</h3>
+                        <p class="quote"> " This is revolutioinary, one of the most innovative things in terms of progression. It almost feels like im living in the future when i can give my clients a list of pills that would help them and tell them what the most effective one is in a matter of seconds" </p>
+                    </div>
+                </div>
+            </div>
             <div class="carousel-right-arrow">
-                <img src="img/right-arrow.svg" alt="right arrow changes to next quote">
+                <a class="next" onclick="changeQuote(1)">
+                    <img src="img/right-arrow.svg" alt="right arrow changes to next quote">
+                </a>
             </div>
         </div>
     </section>
@@ -149,7 +164,7 @@
             </section>
     </footer>
 </div>
-    <script src="" async defer></script>
+    <script src="js/index.js" ></script>
 </body>
 
 </html>
