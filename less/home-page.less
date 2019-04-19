@@ -162,12 +162,14 @@
 .section2 {
     // only load tunji's search example is user is on a chromebook or greater resolution
     display: none;
+
     // make it bigger
-    @media @tablet{
+    @media @tablet {
         //tablet style here
         display: none;
     }
-    @media @chromebooks{
+
+    @media @chromebooks {
         //chromebooks and larger here
         display: block;
     }
@@ -180,99 +182,147 @@
 .section3 {
     background: purple;
 }
+
 // experts section
-.experts-container{
+.experts-container {
     margin-top: 5rem;
     // make it bigger
     .flex-it(@space: center);
     flex-direction: column;
-    img{
+
+    img {
         height: 18rem;
     }
-    p{
+
+    p {
         display: none;
     }
-    div{
+
+    div {
         margin-top: 5rem;
     }
-    @media @tablet{
+
+    @media @tablet {
         //tablet style here
         .flex-it(@space: center);
         flex-direction: inherit;
-        div{
+
+        div {
             margin-top: 0rem;
             margin-left: 4rem;
         }
-        h1{
+
+        h1 {
             font-size: 6rem;
             font-weight: 100;
         }
-        p{
+
+        p {
             display: none;
         }
     }
-    @media @chromebooks{
+
+    @media @chromebooks {
         //chromebooks and larger here
         margin-top: 18rem;
         .flex-it(@space: center);
         flex-direction: row;
-        div{
+
+        div {
             margin-top: 0;
             margin-left: 4rem;
         }
-        h1{
+
+        h1 {
             font-size: 6rem;
         }
-        p{
+
+        p {
             display: block;
             font-size: 3rem;
         }
     }
 }
+
 // quote slider
-.flex-carousel-container{
-    margin-top: 5rem;
+.flex-carousel-container {
+    margin: 5rem 0 5rem
+    ;
     .flex-it();
+
     // make it bigger
-    @media @tablet{
+    @media @tablet {
         //tablet style here
     }
-    @media @chromebooks{
+
+    @media @chromebooks {
         //chromebooks and larger here
+        margin: 5rem 6rem 13rem;
     }
 }
-.carousel-quote{
+
+.carousel-quote {
     margin: 0 4rem 0;
     border-radius: 1rem;
     border: 2px solid @white;
+    background: @darkgreen;
 }
-.flex-slider-ltr{
+
+.flex-slider-ltr {
     .flex-it();
     flex-direction: column; // mobile only
     text-align: center; // mobile only
-    img{
+
+    img {
         height: 15rem;
     }
+
     // make it bigger
-    @media @tablet{
+    @media @tablet {
         //tablet style here
     }
-    @media @chromebooks{
+
+    @media @chromebooks {
         //chromebooks and larger here
         flex-direction: row;
         text-align: left;
-        .carousel-flex-left{
+
+        .carousel-flex-left {
             flex-shrink: 0;
             // flex apprently shrinks content
         }
     }
 }
-.carousel-flex-left{
 
+.carousel-flex-left {
+    background: @white;
+    flex-shrink: 0;
+    // flex apprently shrinks content
+    width: 100%;
+    height: 17rem;
+    img {
+        border-radius: .7rem 0 0 .7rem; // use of .7 is to fix the border radius white space caused with 1
+        height: 100%;
+    }
+    // make it bigger
+    @media @tablet{
+        //tablet style here
+
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+        width: 17rem;
+    }
 }
-.carousel-flex-right{
-    
+
+.carousel-flex-right {
+    padding: 0 4rem 0;
+    color: @white;
+    p{
+        font-style: italic;
+    }
 }
+
 //
 // section 4
 // 
