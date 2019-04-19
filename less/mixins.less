@@ -1,19 +1,9 @@
-.flex-it (@align: center){
+.flex-it (@direction:row){
     display: flex;
+    flex-direction: @direction;
     justify-content: space-between;
-    align-items: @align;
+    align-items: center;
 }
-.button (){
-    font-size: 1.8rem;
-    color: @darkgreen;
-    padding: 2.3rem 5.5rem;
-    border-radius: 1rem;
-    background: @white;
-    border: 1px solid @persiangreen;
-
-    &:hover{
-        color: white;
-        background-color: @persiangreen;
-        border-color: @darkgreen;
-    }
+.mobile-padding (){
+    padding: null;
 }

@@ -9,28 +9,26 @@ html {
     font-style: normal;
     font-weight: 400;
     letter-spacing: .2rem;
+    font-size: 1.2rem;
     color: @white;
     // font
     width: 100%;
     background: gray;
+    // page stuff
+    margin: 0 auto;
+    min-width: 360px;
 }
-
-section {
-    // inner padding for ALL sections
-    padding: 0 33rem 0;
-}
-
-h1{
-    font-size: 6rem;
-    font-weight: 400;
-}
-
-h3{
-    font-weight: 300;
-    font-size: 2.5rem;
-}
-
-
-p{
-    font-size: 2rem;
+section{
+    padding: 0 12rem 0;
+// responsive design stuff
+@media @tablet{
+    // if its smaller than 768 pixels
+    padding: 0 4rem 0;
+    background: red;
+    }
+@media @phone{
+    // if its smaller than 500 pixels
+    padding: 0 2rem 0;
+    background: orange;
+    }
 }

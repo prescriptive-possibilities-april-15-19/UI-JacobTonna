@@ -1,13 +1,53 @@
-nav{
-    padding: 6.5rem 12rem 6.5rem;
-    font-size: 2.8rem;
-    .flex-it();
-    a{
-        text-decoration: none;
-        color: @persiangreen;
-        padding-left: 8rem;
+.nav-container {
+    padding: 3rem 6rem 0;
+
+    //always push from the top down with padding
+    // responsive design stuff
+    @media @tablet {
+        // if its smaller than 768 pixels
+        padding: 3rem 3rem 0;
     }
-    a:hover{
-        color: @paleturquoise;
+
+    @media @phone {
+        // if its smaller than 500 pixels
+        padding: 3rem 1.5rem 0;
+    }
+}
+
+nav {
+    .flex-it();
+
+    img {
+        flex-shrink: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: @midnightgreen;
+        font-size: 1.4rem;
+        margin-left: 3rem;
+    }
+
+    // responsive design stuff
+    @media @phone {
+        // if its smaller than 500 pixels
+        .flex-it(@direction:column;);
+        .links{
+            padding: .5rem;
+        }
+        a:first-child{
+            margin-left: 0;
+        }
+    }
+
+    @media @tablet {
+        // if its smaller than 768 pixels
+        .flex-it(@direction:column;);
+        .links{
+            padding: .5rem;
+        }
+        a:first-child{
+            margin-left: 0;
+        }
     }
 }
