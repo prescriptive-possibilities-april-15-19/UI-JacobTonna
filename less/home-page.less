@@ -96,6 +96,7 @@
 .section1-our-service {
     text-align: center;
     padding: 2rem 0 0 0;
+
     // make it bigger
     @media @tablet {
         //tablet style here
@@ -115,6 +116,7 @@
     color: white;
     text-align: center;
     display: none;
+
     // make it bigger
     @media @tablet {
         //tablet style here
@@ -156,9 +158,24 @@
 //
 // section 2
 //
+
 .section2 {
-    background: yellow;
+    // only load tunji's search example is user is on a chromebook or greater resolution
+    display: none;
+    // make it bigger
+    @media @tablet{
+        //tablet style here
+        display: none;
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+        display: block;
+    }
 }
+
+//
+// section 3
+//
 
 .section3 {
     background: purple;

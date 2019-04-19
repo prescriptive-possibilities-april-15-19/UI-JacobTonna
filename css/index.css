@@ -381,7 +381,17 @@ img {
   }
 }
 .section2 {
-  background: yellow;
+  display: none;
+}
+@media (min-width: 768px) {
+  .section2 {
+    display: none;
+  }
+}
+@media (min-width: 1336px) {
+  .section2 {
+    display: block;
+  }
 }
 .section3 {
   background: purple;
