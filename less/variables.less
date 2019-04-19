@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
-// Color assignments 
-// @font-color: @;
-// @button-bg: @;
-// @main-bg:  @;
-// @navigation-border: @;
-// @footer-bg: @;
-
 // Colors
 @white: #ffffff;
 @gray: #f8f8f8;
@@ -17,20 +10,15 @@
 @cyanazure: #4e8098;
 
 // Escaping
-@phone: ~"(max-width: 500px)";
-// if its smaller than 500 pixels
-@tablet: ~"(max-width: 768px)";
-// if its smaller than 768 pixels
-@chromebooks: ~"(max-width: 1336px)";
+@tablet: ~"(min-width: 768px)";
+@chromebooks: ~"(min-width: 1336px)";
 /*
-// responsive design stuff
-@media @chromebooks{
-// if its smaller than 1336 pixels
-}
 @media @tablet{
-// if its smaller than 768 pixels
+    //tablet style here
+
 }
-@media @phone{
-// if its smaller than 500 pixels
+@media @chromebooks{
+    //chromebooks and larger here
+
 }
 */

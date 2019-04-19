@@ -23,15 +23,13 @@
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v16/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
 }
 /*
-// responsive design stuff
-@media @chromebooks{
-// if its smaller than 1336 pixels
-}
 @media @tablet{
-// if its smaller than 768 pixels
+    //tablet style here
+
 }
-@media @phone{
-// if its smaller than 500 pixels
+@media @chromebooks{
+    //chromebooks and larger here
+
 }
 */
 /**
@@ -167,4 +165,31 @@ html {
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
+}
+body {
+  font-size: 2rem;
+}
+h1 {
+  font-size: 3rem;
+}
+img {
+  height: 2.5rem;
+}
+.footer-section1 {
+  background: lightcoral;
+}
+.footer-section2 {
+  background: coral;
+}
+.section1-div {
+  background: red;
+}
+.section2 {
+  background: yellow;
+}
+.section3 {
+  background: purple;
+}
+.section4 {
+  background: green;
 }
