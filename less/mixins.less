@@ -23,6 +23,15 @@ background-position: bottom center;
 background-repeat: no-repeat;
 }
 
+.background3() {
+    background-image: linear-gradient(
+    rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .95),
+    rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), 1)),
+    url("../img/people.png");
+background-position: bottom center;
+background-repeat: no-repeat;
+}
+
 .button1(@mid-padding: 10rem, @width: 100%) {
     margin-top: 2rem;
     font-size: 2rem;
@@ -37,5 +46,21 @@ background-repeat: no-repeat;
         color: @white;
         background: @midnightgreen;
         border-color: @midnightgreen;
+    }
+}
+.button2(){
+    margin-top: 4rem;
+    font-size: 2rem;
+    padding: 1.5rem 0rem 1.5rem;
+    width: 80%;
+    border-radius: .5rem;
+    background: @midnightgreen;
+    color: @white;
+    border: 2px solid @midnightgreen;
+
+    &:hover {
+        color: @white;
+        background: @persiangreen;
+        border-color: @persiangreen;
     }
 }

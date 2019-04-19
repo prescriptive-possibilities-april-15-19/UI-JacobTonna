@@ -226,8 +226,23 @@ img {
 .footer-section1 {
   background: lightcoral;
 }
+.footer-section1 .flex-4-ltr {
+  padding: 12rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-section1 .foot-section1-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
 .footer-section2 {
-  background: coral;
+  background: #092327;
+  color: #0b5351;
+  text-align: center;
+  font-style: italic;
+  padding: 8rem 0;
 }
 .section1-div {
   background-image: linear-gradient(rgba(9, 35, 39, 0.95), rgba(9, 35, 39, 0.95)), url("../img/Pharmacy-Picture.png");
@@ -394,7 +409,10 @@ img {
   }
 }
 .section3 {
-  background: purple;
+  background-image: linear-gradient(rgba(9, 35, 39, 0.95), #092327), url("../img/people.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  color: #ffffff;
 }
 .experts-container {
   margin-top: 5rem;
@@ -516,5 +534,77 @@ img {
   font-style: italic;
 }
 .section4 {
-  background: green;
+  background: #eeeeee;
+  text-align: center;
+}
+.section4 .flex-3-ltr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-items: flex-start;
+}
+.section4 .donation-box {
+  margin: 4rem 6rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 1rem #888888;
+}
+.section4 .donation-box img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  height: 100%;
+}
+.section4 .donation-box .donation-thin {
+  font-size: 6rem;
+  font-weight: 100;
+  margin-top: 4rem;
+}
+.section4 .donation-box .donation-money {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 6rem;
+  color: #00A9A5;
+}
+.section4 .donation-box p {
+  margin: 0 20% 0;
+  margin-top: 4rem;
+}
+.section4 .donation-box button {
+  margin: 4rem 0 4rem;
+  margin-top: 4rem;
+  font-size: 2rem;
+  padding: 1.5rem 0rem 1.5rem;
+  width: 80%;
+  border-radius: 0.5rem;
+  background: #0b5351;
+  color: #ffffff;
+  border: 2px solid #0b5351;
+}
+.section4 .donation-box button:hover {
+  color: #ffffff;
+  background: #00A9A5;
+  border-color: #00A9A5;
+}
+.section4 .donation-box:not(:first-child) {
+  display: none;
+}
+@media (min-width: 768px) {
+  .section4 .donation-box:not(:last-child) {
+    display: block;
+  }
+}
+@media (min-width: 1336px) {
+  .section4 .section4-heading {
+    margin-top: 6rem;
+    padding: 0 19rem 0;
+  }
+  .section4 .section4-heading h1 {
+    font-size: 6rem;
+  }
+  .section4 .section4-heading p {
+    font-size: 3rem;
+  }
+  .section4 .donation-box:not(:first-child) {
+    display: block;
+  }
 }

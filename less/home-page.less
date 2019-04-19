@@ -180,7 +180,8 @@
 //
 
 .section3 {
-    background: purple;
+    .background3();
+    color: @white;
 }
 
 // experts section
@@ -335,5 +336,66 @@
 // 
 
 .section4 {
-    background: green;
+    background: @gray;
+    text-align: center;
+    .flex-3-ltr{
+        .flex-it();
+        align-items: flex-start;
+    }
+    .donation-box{
+        margin: 4rem 6rem;
+        border-radius: .5rem;
+        background: @white;
+        box-shadow: 0 .4rem 1rem #888888;
+        img{
+            border-radius: .5rem .5rem 0 0;
+            width: 100%;
+            height: 100%;
+        }
+        .donation-thin{
+            font-size: 6rem;
+            font-weight: 100;
+            margin-top: 4rem;
+        }
+        .donation-money{
+            margin-top: 2rem;
+            font-weight: bold;
+            font-size: 6rem;
+            color: @persiangreen;
+        }
+        p {
+            margin: 0 20% 0;
+            margin-top: 4rem;
+        }
+        button{
+            margin: 4rem 0 4rem;
+            .button2();
+        }
+    }
+    .donation-box:not(:first-child){
+        display: none;
+    }
+    // make it bigger
+    @media @tablet{
+        //tablet style here
+        .donation-box:not(:last-child){
+            display: block;
+        }
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+        .section4-heading{
+            margin-top: 6rem;
+            padding: 0 19rem 0;
+            h1{
+                font-size: 6rem;
+            }
+            p{
+                font-size: 3rem;
+            }
+        }     
+        .donation-box:not(:first-child){
+            display: block;
+        }
+    }
 }
