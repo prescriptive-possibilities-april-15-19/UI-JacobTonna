@@ -1,8 +1,8 @@
 .section1-div{
-    background: lightslategray;
+    .background2();
+    color: @paleturquoise;
     @media @tablet{
         //tablet style here
-
     }
     @media @chromebooks{
         //chromebooks and larger here
@@ -17,6 +17,7 @@
 
     // make it bigger
     @media @tablet{
+        padding-top: 4rem;
         //tablet style here
         .section1-image img{
             display: block;
@@ -45,6 +46,9 @@
     }
     p{
 
+    }
+    button{
+        .button1();
     }
     // make it bigger
     @media @tablet{

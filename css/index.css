@@ -172,6 +172,7 @@ body {
 }
 .diaper {
   margin: 0 auto;
+  min-width: 500px;
 }
 .section1-div {
   padding: 0 3rem;
@@ -229,7 +230,10 @@ img {
   background: coral;
 }
 .section1-div {
-  background: lightslategray;
+  background-image: linear-gradient(rgba(9, 35, 39, 0.95), rgba(9, 35, 39, 0.95)), url("../img/Pharmacy-Picture.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  color: #b1ede8;
 }
 @media (min-width: 768px) {
 }
@@ -247,6 +251,9 @@ img {
   display: none;
 }
 @media (min-width: 768px) {
+  .section1 {
+    padding-top: 4rem;
+  }
   .section1 .section1-image img {
     display: block;
     height: 100%;
@@ -269,6 +276,21 @@ img {
     margin: 0 auto;
   }
 }
+.section1-text-button button {
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 1.5rem 10rem 1.5rem;
+  width: 100%;
+  border-radius: 1rem;
+  background: #ffffff;
+  color: #0b5351;
+  border: 2px solid #ffffff;
+}
+.section1-text-button button:hover {
+  color: #ffffff;
+  background: #0b5351;
+  border-color: #0b5351;
+}
 @media (min-width: 768px) {
   .section1-text-button h1 {
     font-size: 6rem;
@@ -280,13 +302,14 @@ img {
     padding: 1.5rem 10rem 1.5rem;
     width: 100%;
     border-radius: 1rem;
-    background: #0b5351;
-    color: #ffffff;
-    border: 2px solid #0b5351;
+    background: #ffffff;
+    color: #0b5351;
+    border: 2px solid #ffffff;
   }
   .section1-text-button button:hover {
-    color: #0b5351;
-    background: #ffffff;
+    color: #ffffff;
+    background: #0b5351;
+    border-color: #0b5351;
   }
 }
 @media (min-width: 1336px) {
@@ -300,13 +323,14 @@ img {
     padding: 1.5rem 4rem 1.5rem;
     width: auto;
     border-radius: 1rem;
-    background: #0b5351;
-    color: #ffffff;
-    border: 2px solid #0b5351;
+    background: #ffffff;
+    color: #0b5351;
+    border: 2px solid #ffffff;
   }
   .section1-text-button button:hover {
-    color: #0b5351;
-    background: #ffffff;
+    color: #ffffff;
+    background: #0b5351;
+    border-color: #0b5351;
   }
 }
 .section1-our-service {
