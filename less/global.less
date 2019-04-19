@@ -7,28 +7,48 @@ html {
     // allows 1 rem = 10px
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-weight: 400;
     letter-spacing: .2rem;
     font-size: 1.2rem;
     color: @white;
     // font
     width: 100%;
-    background: gray;
+    background: darkgray;
     // page stuff
     margin: 0 auto;
     min-width: 360px;
+
 }
-section{
-    padding: 0 12rem 0;
-// responsive design stuff
-@media @tablet{
-    // if its smaller than 768 pixels
-    padding: 0 4rem 0;
-    background: red;
+
+// font stuff
+h1 {
+    color: @white;
+    font-size: 3rem;
+    font-weight: 100;
+
+    // responsive design stuff
+    @media @tablet {
+        // if its smaller than 768 pixels
+        font-size: 2rem;
     }
-@media @phone{
-    // if its smaller than 500 pixels
-    padding: 0 2rem 0;
-    background: orange;
+
+    @media @phone {
+        // if its smaller than 500 pixels
+        font-size: 1.6rem;
+    }
+}
+
+// section stuff
+section {
+    padding: 0 16rem 0;
+
+    // responsive design stuff
+    @media @tablet {
+        // if its smaller than 768 pixels
+        padding: 0 4rem 0;
+    }
+
+    @media @phone {
+        // if its smaller than 500 pixels
+        padding: 0 2rem 0;
     }
 }

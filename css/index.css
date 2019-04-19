@@ -24,11 +24,11 @@
 }
 /*
 // responsive design stuff
-@media @phone{
-// if its smaller than 500 pixels
-}
 @media @tablet{
 // if its smaller than 768 pixels
+}
+@media @phone{
+// if its smaller than 500 pixels
 }
 */
 /**
@@ -164,28 +164,40 @@ html {
   font-size: 62.5%;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-weight: 400;
   letter-spacing: 0.2rem;
   font-size: 1.2rem;
   color: #ffffff;
   width: 100%;
-  background: gray;
+  background: darkgray;
   margin: 0 auto;
   min-width: 360px;
 }
+h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 100;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}
 section {
-  padding: 0 12rem 0;
+  padding: 0 16rem 0;
 }
 @media (max-width: 768px) {
   section {
     padding: 0 4rem 0;
-    background: red;
   }
 }
 @media (max-width: 500px) {
   section {
     padding: 0 2rem 0;
-    background: orange;
   }
 }
 .nav-container {
@@ -242,5 +254,113 @@ nav a {
   }
   nav a:first-child {
     margin-left: 0;
+  }
+}
+.section1 {
+  background: #440f46;
+  margin: 6rem 0 0;
+}
+.section1 button {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+@media (max-width: 768px) {
+  .section1 button {
+    font-size: 1rem;
+    width: 100%;
+    margin: 2rem 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .section1 button {
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 1.5rem 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .section1 {
+    margin: 1rem 0 0;
+  }
+  .section1 img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .section1 {
+    margin: 3rem 0 0;
+  }
+  .section1 img {
+    width: 75%;
+  }
+}
+.section1-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .section1-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .section1-flex br {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .section1-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .section1-flex br {
+    display: none;
+  }
+}
+.section1-our-service {
+  margin: 3rem 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .section1-our-service {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .section1-our-service {
+    font-size: 0.8rem;
+  }
+}
+.section1-sub-content {
+  text-align: center;
+  margin: 9rem 0 0;
+}
+.section1-sub-content p {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .section1-sub-content {
+    margin: 4rem 0 0;
+  }
+  .section1-sub-content p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .section1-sub-content {
+    margin: 2rem 0 0;
+  }
+  .section1-sub-content p {
+    font-size: 0.8rem;
   }
 }

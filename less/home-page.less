@@ -1,0 +1,102 @@
+.section1 {
+    background: rgb(68, 15, 70);
+    margin: 6rem 0 0;
+
+    img {
+        // do nothing
+    }
+
+    button {
+        .button();
+    }
+
+    // responsive design stuff
+    @media @phone {
+        // if its smaller than 500 pixels
+        margin: 1rem 0 0;
+
+        img {
+            display: none;
+        }
+    }
+
+    @media @tablet {
+        // if its smaller than 768 pixels
+        margin: 3rem 0 0;
+
+        img {
+            width: 75%
+        }
+    }
+}
+
+.section1-flex {
+    .flex-it();
+
+    @media @tablet {
+        // if its smaller than 768 pixels
+        .flex-it(@direction: column;
+        );
+        text-align: center;
+
+        br {
+            display: none;
+        }
+    }
+
+    @media @phone {
+        // if its smaller than 500 pixels
+        .flex-it(@direction: column;
+        );
+        text-align: center;
+
+        br {
+            display: none;
+        }
+    }
+}
+
+.section1-our-service {
+    // this is the p tag under the button and image
+    margin: 3rem 0 0;
+    font-size: 1.5rem;
+    text-align: center;
+
+    // responsive design stuff
+    @media @tablet {
+        // if its smaller than 768 pixels
+        font-size: 1rem;
+    }
+
+    @media @phone {
+        // if its smaller than 500 pixels
+        font-size: .8rem;
+    }
+}
+
+.section1-sub-content {
+    text-align: center;
+    margin: 9rem 0 0;
+
+    p {
+        margin: 2rem 0;
+        font-size: 1.5rem;
+    }
+
+    // responsive design stuff
+    @media @tablet {
+        // if its smaller than 768 pixels
+        margin: 4rem 0 0;
+        p{
+            font-size: 1rem;
+        }
+    }
+
+    @media @phone {
+        // if its smaller than 500 pixels
+        margin: 2rem 0 0;
+        p{
+        font-size: .8rem;
+        }
+    }
+}
