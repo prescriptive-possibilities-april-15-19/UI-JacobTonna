@@ -1,15 +1,15 @@
 .section1-div{
-    background: red;
+    background: lightslategray;
     @media @tablet{
         //tablet style here
 
     }
     @media @chromebooks{
         //chromebooks and larger here
+        .background1();
     }
 }
 .section1{
-    background: darkmagenta;
     text-align: center;
     .section1-image img{
         display: none;
@@ -28,6 +28,7 @@
         //chromebooks and larger here
         text-align: left;
         .section1-flex{
+            padding: 10rem 0 0 0;
             .flex-it();
         }
         .section1-image img{
@@ -37,6 +38,51 @@
         }
     }
 }
+
+.section1-text-button{
+    h1{
+
+    }
+    p{
+
+    }
+    // make it bigger
+    @media @tablet{
+        //tablet style here
+        h1{
+            font-size: 6rem;
+            font-weight: 100;
+        }
+        button{
+            .button1();
+        }
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+        h1{
+            font-size: 6rem;
+            font-weight: 100;
+        }
+        button{
+            .button1(@mid-padding: 4rem, @width: auto);
+        }
+    }
+}
+
+.section1-our-service{
+    text-align: center;
+    // make it bigger
+    @media @tablet{
+        //tablet style here
+
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+        font-size: 3rem;
+        padding: 6rem 30rem 0;
+    }
+}
+// section 2
 .section2{
     background: yellow;
 }

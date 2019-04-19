@@ -205,8 +205,21 @@ img {
     justify-content: space-between;
     align-items: center;
   }
+  .nav .links a {
+    font-size: 3rem;
+  }
   .nav .links a:last-child {
-    margin-left: 4rem;
+    margin-left: 10rem;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1336px) {
+  .nav-container {
+    padding: 4rem 9rem 0;
+  }
+  .nav-container nav img {
+    height: 100%;
   }
 }
 .footer-section1 {
@@ -216,14 +229,18 @@ img {
   background: coral;
 }
 .section1-div {
-  background: red;
+  background: lightslategray;
 }
 @media (min-width: 768px) {
 }
 @media (min-width: 1336px) {
+  .section1-div {
+    background-image: linear-gradient(rgba(9, 35, 39, 0.9), rgba(9, 35, 39, 0.9)), url("../img/Pharmacy-Wave.svg"), url("../img/Pharmacy-Picture.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
 }
 .section1 {
-  background: darkmagenta;
   text-align: center;
 }
 .section1 .section1-image img {
@@ -241,6 +258,7 @@ img {
     text-align: left;
   }
   .section1 .section1-flex {
+    padding: 10rem 0 0 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -249,6 +267,57 @@ img {
     display: block;
     height: 100%;
     margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .section1-text-button h1 {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+  .section1-text-button button {
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 1.5rem 10rem 1.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    background: #0b5351;
+    color: #ffffff;
+    border: 2px solid #0b5351;
+  }
+  .section1-text-button button:hover {
+    color: #0b5351;
+    background: #ffffff;
+  }
+}
+@media (min-width: 1336px) {
+  .section1-text-button h1 {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+  .section1-text-button button {
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 1.5rem 4rem 1.5rem;
+    width: auto;
+    border-radius: 1rem;
+    background: #0b5351;
+    color: #ffffff;
+    border: 2px solid #0b5351;
+  }
+  .section1-text-button button:hover {
+    color: #0b5351;
+    background: #ffffff;
+  }
+}
+.section1-our-service {
+  text-align: center;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1336px) {
+  .section1-our-service {
+    font-size: 3rem;
+    padding: 6rem 30rem 0;
   }
 }
 .section2 {

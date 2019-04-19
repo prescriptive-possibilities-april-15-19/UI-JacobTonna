@@ -17,8 +17,25 @@
     @media @chromebooks {
         //chromebooks and larger here
         .flex-it(@space: space-between);
-        .links a:last-child{
-            margin-left: 4rem;
+        .links a{
+            font-size: 3rem;
+            &:last-child{
+                margin-left: 10rem;
+            }
+        }
+    }
+}
+.nav-container{
+    @media @tablet{
+        //tablet style here
+
+    }
+    @media @chromebooks{
+        //chromebooks and larger here
+        padding: 4rem 9rem 0;
+
+        nav img{
+            height: 100%;
         }
     }
 }

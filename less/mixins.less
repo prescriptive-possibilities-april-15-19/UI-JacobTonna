@@ -1,5 +1,31 @@
-.flex-it(@space: space-around){
+.flex-it(@space: space-around) {
     display: flex;
     justify-content: @space;
     align-items: center;
+}
+
+.background1() {
+    //background image stuff
+    background-image: linear-gradient(rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .9),
+        rgba(red(@darkgreen), green(@darkgreen), blue(@darkgreen), .9)),
+        url("../img/Pharmacy-Wave.svg"),
+        url("../img/Pharmacy-Picture.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.button1(@mid-padding: 10rem, @width: 100%) {
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 1.5rem @mid-padding 1.5rem;
+    width: @width;
+    border-radius: 1rem;
+    background: @midnightgreen;
+    color: @white;
+    border: 2px solid @midnightgreen;
+
+    &:hover {
+        color: @midnightgreen;
+        background: @white;
+    }
 }
